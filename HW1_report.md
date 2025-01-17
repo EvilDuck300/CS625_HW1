@@ -16,11 +16,20 @@
 - **Clone:** The `git clone` command is used to create a local copy of a remote repository. This is typically the first step to start working on a project hosted on GitHub.  
 
 ### 3. You have committed a change on your local machine/remote. However, you want to undo the changes committed. How would you do that?  
-To undo a commit, you can use the following commands based on your scenario:  
+To undo a commit, use the commit command as shown below:  
 
 -   
   ```bash
   git reset --soft HEAD~1
+
+### 4. My Favorite Olympic Sport
+
+- **![This is my favorite olympic gymmastics](Olympicsport.jpg)**
+
+
+
+
+ 
 
 
 
