@@ -1,52 +1,27 @@
-# HW 1 - CS 625, Spring 2025
-# Aamr Ibrahim
+# Homework 1: Tool Setup  
+**Name:** [Your Full Name]  
+**HW Number:** HW1  
+**Class:** CS 625 - Data Visualization  
+**Due Date:** January 26, 2025  
 
-# Git, GitHub
-### [What is the URL of the GitHub repo that you created in your personal account?](https://github.com/EvilDuck300/CS625_HW1)
+---
 
-## What is pull vs clone in GitHub? 
+## Step 2: GitHub Questions  
 
-You have committed a change on your local machine/remote. However, you want to undo the changes committed. How would you do that?
+### 1. What is the URL of the GitHub repo that you created in your personal account?  
+[[Click on my repo](https://github.com/EvilDuck300/CS625_HW1.git)]  
 
-Markdown
-Create a bulleted list with at least 3 items
+### 2. What is pull vs clone in GitHub?  
+- **Pull:** The `git pull` command is used to fetch and merge changes from a remote repository into your local repository. It updates your local branch with the latest changes from the remote branch.
+- **Clone:** The `git clone` command is used to create a local copy of a remote repository. This is typically the first step to start working on a project hosted on GitHub.  
 
-Write a single paragraph that demonstrates the use of italics, bold, bold italics, code, and includes a link. The paragraph must explain your favorite Olympic sport/game, the country that won the most number of olympic GOLD medals (Summer) in your favorite sport in 2020 (Japan) and 2024 (France). You are free to include more information.
+### 3. You have committed a change on your local machine/remote. However, you want to undo the changes committed. How would you do that?  
+To undo a commit, you can use the following commands based on your scenario:  
 
-Create a level 3 heading
+-   
+  ```bash
+  git reset --soft HEAD~1
 
-Insert a image of your favorite Olympics sport/game, sized appropriately
+  
 
-Tableau
-Insert the image of your horizontal bar chart here. Reminder, this should show countries that won the least number of medals only (excluding ZERO) in Paris2024 Summer Olynpics by continent (one country from each continent is ok).
 
-Google Colab
-What is the URL of your Google Colab notebook?
-
-Python/Seaborn
-Insert the first penguin chart here
-
-Describe what the figure is showing.
-
-Insert the second penguin chart here
-
-Describe what the figure is showing.
-
-What happened when you removed the outer parentheses from the code? Why?
-
-Observable and Vega-Lite
-What happens when you replace markCircle() with markSquare()?
-
-What happens when you replace markCircle() with markPoint()?
-
-What change do you need to make to swap the x and y axes on the scatterplot?
-
-Insert the bar chart image here
-
-Why do you think this chart is the result of this code change?
-
-References
-Every report must list the references (including the URL) that you consulted while completing the assignment. Replace the items below with the references you consulted
-
-Reference 1, https://www.example.com
-Reference 2, https://www.example.com/reallyreallyreally-extra-long-URI/
