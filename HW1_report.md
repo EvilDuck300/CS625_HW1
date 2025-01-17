@@ -2,9 +2,9 @@
 # Aamr Ibrahim
 
 # Git, GitHub
-## [What is the URL of the GitHub repo that you created in your personal account?](https://github.com/EvilDuck300/CS625_HW1)
+### [What is the URL of the GitHub repo that you created in your personal account?](https://github.com/EvilDuck300/CS625_HW1)
 
-What is pull vs clone in GitHub?
+## What is pull vs clone in GitHub? 
 
 You have committed a change on your local machine/remote. However, you want to undo the changes committed. How would you do that?
 
