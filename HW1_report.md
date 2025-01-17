@@ -1,12 +1,12 @@
 # Homework 1: Tool Setup  
-**Name:** [Your Full Name]  
+**Name:** Aamr Ibrahim  
 **HW Number:** HW1  
 **Class:** CS 625 - Data Visualization  
 **Due Date:** January 26, 2025  
 
 ---
 
-## Step 2: GitHub Questions  
+ 
 
 ### 1. What is the URL of the GitHub repo that you created in your personal account?  
 [[Click on my repo](https://github.com/EvilDuck300/CS625_HW1.git)]  
@@ -22,6 +22,6 @@ To undo a commit, you can use the following commands based on your scenario:
   ```bash
   git reset --soft HEAD~1
 
-  
+
 
 
