@@ -119,7 +119,6 @@ The top 5 movies wiih highest vote and Verdict with Flop are:
 
 
 1. The Human Centipede (First Sequence)
-edit
 2. 365 Dni
 3. Thunder Force  
 4. Troy: Fall of a City
