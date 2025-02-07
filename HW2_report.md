@@ -46,6 +46,8 @@ Then set the blank values with N/A:
 For the Votes i have replaced the commas from numbers using this GREL command:
 value.replace(",", "")
 ![alt text](image-7.png)
+__________________________________________________________
+
 Now i will be setting the Vote column cells to 0 
 ![alt text](image-8.png)
 Edit Cells -> Common Transforms -> To number
