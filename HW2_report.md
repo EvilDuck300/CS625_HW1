@@ -111,8 +111,10 @@ Q2: In 2020, Dark has the highest rating and the genre for that is Crime, Drama 
 
 Q3: The top 3 generes are:
 Animation, Action and Crime with the lowest votes in the dataset
+![alt text](image-312.jpg)
 
 Q4: Movie Name: Goedam , Number of votes: 694 and Short, Horror, Mystery
+![alt text](image-33.jpg)
 
 Q5: 
 The top 5 movies wiih highest vote and Verdict with Flop are:
