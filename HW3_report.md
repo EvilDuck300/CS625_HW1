@@ -7,66 +7,62 @@
 
 # 1. DATA 
 This is the dataset that i chose from the VA beach page:
-[VA BEACH DATASET](https://data.virginiabeach.gov/datasets/c13e8bc5c93441c186464a87bec0c907_0/explore)
+[VA BEACH DATASET FIRST DATASET](https://data.virginiabeach.gov/datasets/15292e05ab3a42d5984e6033b2f6a6d4_0/explore)
 
-Name: Pavement_Segments
+[VA BEACH DATASET SECOND DATASET](https://data.virginiabeach.gov/datasets/a7b2f685f9ee4865befe1f6502c0047d_37/explore?location=36.740530%2C-76.047850%2C10.61)
 
-Dataset name: PW_Pavement_Segments.csv
+[VA BEACH DATASET THIRD DATASET](https://data.virginiabeach.gov/datasets/bf1337ce881646b8977fe26bd44ca1df_4/explore?location=36.760783%2C-76.074600%2C10.86)
 
-Justification: 
- Provides pavement segment level data which includes information on road names, surface types, lane miles and PCI  (Pavement Condition Index).
-![alt text](img-1.jpg)
-![alt text](img-2.jpg)
 
-Num of rows: 514 rows 
 
-Num of columns: 26
+Names:
+
+Building Permits Applications
+
+Zoning District
+
+Stormwater Manhole
+
 
 ## Data Prerocessing
+To prepare the data for visualization, the following steps were performed:
 
-file_head = '/content/PW_Pavement_Segments.csv'
-df = pd.read_csv(file_head)
-df.head(4)
-## Remove unnecessary columns
-columns_to_drop = ["OBJECTID", "Cartegraph_ID", "Location_Description", "Map_Grid", "created_date", "last_edited_date"]
-df_cleaned = df.drop(columns=columns_to_drop)
+Data Cleaning: Removed missing values and inconsistencies.
 
-## Rename columns for better readability
-df_cleaned = df_cleaned.rename(columns={
-    "Street_Name": "Street",
-    "From_Street": "From",
-    "To_Street": "To",
-    "Surface_Width": "Width_ft",
-    "Measured_ADT": "Traffic_Volume",
-    "PCI": "Pavement_Condition_Index",
-    "Number_of_Lanes": "Lanes",
-    "Mile_Length": "Miles",
-    "Foot_Length": "Feet",
-    "LANE_MI": "Lane_Miles"
-})
+Filtering: Selected relevant subsets of the data to enhance readability.
 
-## Handle missing values: Fill missing PCI values with the median PCI
-df_cleaned["Pavement_Condition_Index"] = df_cleaned["Pavement_Condition_Index"].fillna(df_cleaned["Pavement_Condition_Index"].median())
-df_cleaned["CompKey"] = df_cleaned["CompKey"].fillna(0)
+Aggregation: Grouped data by meaningful categories to highlight trends.
 
-## Display updated dataset information
-df_cleaned.info(), df_cleaned.head()
-
-Output:
-![alt text](image-12.png)
-![alt text](image-13.png)
-![alt text](image-14.png)
+Normalization: Standardized numerical values where necessary to ensure comparability.
 
 
-This is the cleaned dataset:
-![alt text](image-15.png)
 
-![alt text](image-16.png)
 
-## Creating the Charts
+Idiom: Bar Chart / Mark: Rectangle
+| Data: Attribute | Data: Attribute Type  | Encode: Channel | 
+| --- |---| --- |
+| Category | Categorical | Vertical spatial region (y-axis) |
+| Value | Quantitative | Horizontal position on a common scale (x-axis) |
 
-Bar Chart:
-![alt text](image-18.png)
+
+Idiom: Scatterplot / Mark: Point
+| Data: Attribute | Data: Attribute Type  | Encode: Channel | 
+| --- |---| --- |
+| X Variable | Quantitative | Horizontal spatial region (x-axis) |
+| Y Variable | Quantitative | Horizontal position on a common Vertical spatial region (y-axis) |
+| Category    | Categorical  | Color
+
+
+
+
+
+
+
+## Links to Code / Workbooks
+
+[Colab code for both cleaning and visulation](https://data.virginiabeach.gov/datasets/bf1337ce881646b8977fe26bd44ca1df_4/explore?location=36.760783%2C-76.074600%2C10.86)
+
+
 
 
 
