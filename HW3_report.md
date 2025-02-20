@@ -15,7 +15,7 @@ This is the dataset that i chose from the VA beach page:
 
 
 
-Names:
+# Names:
 
 Building Permits Applications
 
@@ -37,6 +37,8 @@ Normalization: Standardized numerical values where necessary to ensure comparabi
 
 
 
+# Visualization Idioms & Visual Encoding Choices
+## Bar Chart (First Dataset)
 
 Idiom: Bar Chart / Mark: Rectangle
 | Data: Attribute | Data: Attribute Type  | Encode: Channel | 
@@ -44,6 +46,7 @@ Idiom: Bar Chart / Mark: Rectangle
 | Category | Categorical | Vertical spatial region (y-axis) |
 | Value | Quantitative | Horizontal position on a common scale (x-axis) |
 
+## Scatterplot (Second Dataset)
 
 Idiom: Scatterplot / Mark: Point
 | Data: Attribute | Data: Attribute Type  | Encode: Channel | 
@@ -51,6 +54,71 @@ Idiom: Scatterplot / Mark: Point
 | X Variable | Quantitative | Horizontal spatial region (x-axis) |
 | Y Variable | Quantitative | Horizontal position on a common Vertical spatial region (y-axis) |
 | Category    | Categorical  | Color
+
+
+## Area Chart (Third Dataset)
+
+Idiom: Area Chart  / Mark: Area
+| Data: Attribute | Data: Attribute Type  | Encode: Channel | 
+| --- |---| --- |
+| X Variable | Quantitative | Horizontal spatial region (x-axis) |
+| Y Variable | Quantitative | Horizontal position on a common Vertical spatial region (y-axis) |
+| Category    | Categorical  | Color
+
+
+
+## Multiple Line Chart (Fourth Dataset)
+
+Idiom: Area Chart  / Mark: Area
+| Data: Attribute | Data: Attribute Type  | Encode: Channel | 
+| --- |---| --- |
+| X Variable | Quantitative | Horizontal spatial region (x-axis) |
+| Y Variable | Quantitative | Horizontal position on a common Vertical spatial region (y-axis) |
+| Category    | Categorical  | Line Color
+
+
+# Creating Charts
+
+### First Chart: 
+  **![First Chart for the First Dataset](First_Bar_Dataset.png)**
+
+  ### Second Chart: 
+  **![First Chart for the First Dataset](Second_scatterplot_Dataset.png)**
+
+### Third Chart: 
+  **![First Chart for the First Dataset](Thrid_Area_Dataset.png)**
+
+### Fourth Chart (Using Tableau): 
+  **![First Chart for the First Dataset](Fourth_chart.png)**
+
+# Customizations
+
+Adjusted axis scales for better readability.
+
+Used distinct colors to differentiate categories.
+
+Added gridlines and labels for clarity.
+
+Modified line thickness for better distinction.
+
+
+# Reflection
+
+For the chart recreated in another tool, the ease of use and customization capabilities were assessed. 
+
+# References
+
+List any external resources consulted for data processing, visualization techniques, or tool documentation.
+
+[Reference 1]
+
+[Reference 2]
+
+[Reference 3]
+
+
+
+
 
 
 
