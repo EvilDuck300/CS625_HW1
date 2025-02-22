@@ -7,6 +7,7 @@
 
 # 1. DATA 
 This is the dataset that i chose from the VA beach page:
+
 [VA BEACH DATASET FIRST DATASET](https://data.virginiabeach.gov/datasets/15292e05ab3a42d5984e6033b2f6a6d4_0/explore)
 
 [VA BEACH DATASET SECOND DATASET](https://data.virginiabeach.gov/datasets/a7b2f685f9ee4865befe1f6502c0047d_37/explore?location=36.740530%2C-76.047850%2C10.61)
@@ -22,8 +23,11 @@ This dataset contains information about building permits issued in Virginia Beac
 
 Zoning District:
 This dataset describes the zoning regulations for different areas within Virginia Beach. It provides information on zoning designations, permitted land uses, and other zoning-related attributes.
+
 Stormwater Manhole:
 This dataset contains details about stormwater manholes in Virginia Beach, including their location, size, material, and inspection information.
+
+
 
 
 # Data Cleaning & Manipulation
@@ -122,13 +126,11 @@ Justification:  The Tableau recreation of the Stormwater Manhole Construction Ti
 
 # References
 
-List any external resources consulted for data processing, visualization techniques, or tool documentation.
+[Refrence: Seaborn page](https://seaborn.pydata.org/)
 
-[Reference 1]
+[Refrence: Pandas page](https://pandas.pydata.org/)
 
-[Reference 2]
 
-[Reference 3]
 
 ## Links to Code / Workbooks
 
