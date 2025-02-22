@@ -1,0 +1,897 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1211.0901                               -->
+<workbook original-version='18.1' source-build='2024.3.2 (20243.24.1211.0901)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Stormwater_manhole_cleaned' inline='true' name='federated.0s0hqu3057t1n512ac7h10yf7heb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Stormwater_manhole_cleaned' name='textscan.1lalhia1dnbtoa13yzfpt101b2xh'>
+            <connection class='textscan' directory='C:/Users/aamri/OneDrive/Desktop/HW1_CS625/Github repo/CS625_HW1' filename='Stormwater_manhole_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1lalhia1dnbtoa13yzfpt101b2xh' name='Stormwater_manhole_cleaned.csv' table='[Stormwater_manhole_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='x' ordinal='0' />
+            <column datatype='real' name='y' ordinal='1' />
+            <column datatype='integer' name='objectid' ordinal='2' />
+            <column datatype='string' name='cartegraph_id' ordinal='3' />
+            <column datatype='string' name='cartegraph_type' ordinal='4' />
+            <column datatype='real' name='year_built' ordinal='5' />
+            <column datatype='string' name='ownership' ordinal='6' />
+            <column datatype='real' name='x_coordinate' ordinal='7' />
+            <column datatype='real' name='y_coordinate' ordinal='8' />
+            <column datatype='string' name='comment' ordinal='9' />
+            <column datatype='string' name='field_survey' ordinal='10' />
+            <column datatype='string' name='point_confidence' ordinal='11' />
+            <column datatype='string' name='file_number' ordinal='12' />
+            <column datatype='string' name='watershed' ordinal='13' />
+            <column datatype='string' name='subdivision' ordinal='14' />
+            <column datatype='string' name='council_district' ordinal='15' />
+            <column datatype='string' name='map_grid' ordinal='16' />
+            <column datatype='string' name='inst_date' ordinal='17' />
+            <column datatype='real' name='rim_elevation' ordinal='18' />
+            <column datatype='real' name='east_invert' ordinal='19' />
+            <column datatype='real' name='west_invert' ordinal='20' />
+            <column datatype='real' name='north_invert' ordinal='21' />
+            <column datatype='real' name='south_invert' ordinal='22' />
+            <column datatype='string' name='street' ordinal='23' />
+            <column datatype='real' name='prop_gpin' ordinal='24' />
+            <column datatype='string' name='created_date' ordinal='25' />
+            <column datatype='string' name='conflict_in_structure' ordinal='26' />
+            <column datatype='string' name='pavement_segment_id' ordinal='27' />
+            <column datatype='string' name='stormpipe_network_id' ordinal='28' />
+            <column datatype='string' name='last_edited_date' ordinal='29' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[x]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>x</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[y]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>y</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>objectid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[objectid]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>objectid</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cartegraph_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cartegraph_id]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>cartegraph_id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cartegraph_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cartegraph_type]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>cartegraph_type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_built</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[year_built]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>year_built</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ownership</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ownership]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>ownership</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>x_coordinate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[x_coordinate]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>x_coordinate</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>y_coordinate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[y_coordinate]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>y_coordinate</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[comment]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>comment</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>field_survey</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[field_survey]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>field_survey</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>point_confidence</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[point_confidence]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>point_confidence</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>file_number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[file_number]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>file_number</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>watershed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[watershed]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>watershed</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subdivision</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[subdivision]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>subdivision</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>council_district</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[council_district]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>council_district</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>map_grid</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[map_grid]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>map_grid</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inst_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[inst_date]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>inst_date</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rim_elevation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rim_elevation]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>rim_elevation</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>east_invert</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[east_invert]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>east_invert</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>west_invert</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[west_invert]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>west_invert</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>north_invert</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[north_invert]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>north_invert</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>south_invert</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[south_invert]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>south_invert</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>street</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[street]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>street</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prop_gpin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[prop_gpin]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>prop_gpin</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[created_date]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>created_date</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conflict_in_structure</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[conflict_in_structure]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>conflict_in_structure</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pavement_segment_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pavement_segment_id]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>pavement_segment_id</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stormpipe_network_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stormpipe_network_id]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>stormpipe_network_id</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_edited_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[last_edited_date]</local-name>
+            <parent-name>[Stormwater_manhole_cleaned.csv]</parent-name>
+            <remote-alias>last_edited_date</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Stormwater_manhole_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA]' role='measure' type='quantitative' />
+      <column caption='Cartegraph Id' datatype='string' name='[cartegraph_id]' role='dimension' type='nominal' />
+      <column caption='Cartegraph Type' datatype='string' name='[cartegraph_type]' role='dimension' type='nominal' />
+      <column caption='Comment' datatype='string' name='[comment]' role='dimension' type='nominal' />
+      <column caption='Conflict In Structure' datatype='string' name='[conflict_in_structure]' role='dimension' type='nominal' />
+      <column caption='Council District' datatype='string' name='[council_district]' role='dimension' type='nominal' />
+      <column caption='Created Date' datatype='string' name='[created_date]' role='dimension' type='nominal' />
+      <column caption='East Invert' datatype='real' name='[east_invert]' role='measure' type='quantitative' />
+      <column caption='Field Survey' datatype='string' name='[field_survey]' role='dimension' type='nominal' />
+      <column caption='File Number' datatype='string' name='[file_number]' role='dimension' type='nominal' />
+      <column caption='Inst Date' datatype='string' name='[inst_date]' role='dimension' type='nominal' />
+      <column caption='Last Edited Date' datatype='string' name='[last_edited_date]' role='dimension' type='nominal' />
+      <column caption='Map Grid' datatype='string' name='[map_grid]' role='dimension' type='nominal' />
+      <column caption='North Invert' datatype='real' name='[north_invert]' role='measure' type='quantitative' />
+      <column caption='Objectid' datatype='integer' name='[objectid]' role='measure' type='quantitative' />
+      <column caption='Ownership' datatype='string' name='[ownership]' role='dimension' type='nominal' />
+      <column caption='Pavement Segment Id' datatype='string' name='[pavement_segment_id]' role='dimension' type='nominal' />
+      <column caption='Point Confidence' datatype='string' name='[point_confidence]' role='dimension' type='nominal' />
+      <column caption='Prop Gpin' datatype='real' name='[prop_gpin]' role='measure' type='quantitative' />
+      <column caption='Rim Elevation' datatype='real' name='[rim_elevation]' role='measure' type='quantitative' />
+      <column caption='South Invert' datatype='real' name='[south_invert]' role='measure' type='quantitative' />
+      <column caption='Stormpipe Network Id' datatype='string' name='[stormpipe_network_id]' role='dimension' type='nominal' />
+      <column caption='Street' datatype='string' name='[street]' role='dimension' type='nominal' />
+      <column caption='Subdivision' datatype='string' name='[subdivision]' role='dimension' type='nominal' />
+      <column caption='Watershed' datatype='string' name='[watershed]' role='dimension' type='nominal' />
+      <column caption='West Invert' datatype='real' name='[west_invert]' role='measure' type='quantitative' />
+      <column caption='X' datatype='real' name='[x]' role='measure' type='quantitative' />
+      <column caption='X Coordinate' datatype='real' name='[x_coordinate]' role='measure' type='quantitative' />
+      <column caption='Y' datatype='real' name='[y]' role='measure' type='quantitative' />
+      <column caption='Y Coordinate' datatype='real' name='[y_coordinate]' role='measure' type='quantitative' />
+      <column caption='Year Built' datatype='real' name='[year_built]' role='dimension' type='quantitative' />
+      <column-instance column='[cartegraph_type]' derivation='None' name='[none:cartegraph_type:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:cartegraph_type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;AIR RELEASE MANHOLE&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;JUNCTION BOX&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;FORCE MAIN ENTRY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;STORMWATER MANHOLE&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;CONFLICT MANHOLE&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;OTHER&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;CLEANOUT&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;WATER QUALITY STRUCTURE&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Stormwater_manhole_cleaned.csv' id='Stormwater_manhole_cleaned.csv_41D522C9C3304B76BE4C76BBF73CF9CA'>
+            <properties context=''>
+              <relation connection='textscan.1lalhia1dnbtoa13yzfpt101b2xh' name='Stormwater_manhole_cleaned.csv' table='[Stormwater_manhole_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='x' ordinal='0' />
+                  <column datatype='real' name='y' ordinal='1' />
+                  <column datatype='integer' name='objectid' ordinal='2' />
+                  <column datatype='string' name='cartegraph_id' ordinal='3' />
+                  <column datatype='string' name='cartegraph_type' ordinal='4' />
+                  <column datatype='real' name='year_built' ordinal='5' />
+                  <column datatype='string' name='ownership' ordinal='6' />
+                  <column datatype='real' name='x_coordinate' ordinal='7' />
+                  <column datatype='real' name='y_coordinate' ordinal='8' />
+                  <column datatype='string' name='comment' ordinal='9' />
+                  <column datatype='string' name='field_survey' ordinal='10' />
+                  <column datatype='string' name='point_confidence' ordinal='11' />
+                  <column datatype='string' name='file_number' ordinal='12' />
+                  <column datatype='string' name='watershed' ordinal='13' />
+                  <column datatype='string' name='subdivision' ordinal='14' />
+                  <column datatype='string' name='council_district' ordinal='15' />
+                  <column datatype='string' name='map_grid' ordinal='16' />
+                  <column datatype='string' name='inst_date' ordinal='17' />
+                  <column datatype='real' name='rim_elevation' ordinal='18' />
+                  <column datatype='real' name='east_invert' ordinal='19' />
+                  <column datatype='real' name='west_invert' ordinal='20' />
+                  <column datatype='real' name='north_invert' ordinal='21' />
+                  <column datatype='real' name='south_invert' ordinal='22' />
+                  <column datatype='string' name='street' ordinal='23' />
+                  <column datatype='real' name='prop_gpin' ordinal='24' />
+                  <column datatype='string' name='created_date' ordinal='25' />
+                  <column datatype='string' name='conflict_in_structure' ordinal='26' />
+                  <column datatype='string' name='pavement_segment_id' ordinal='27' />
+                  <column datatype='string' name='stormpipe_network_id' ordinal='28' />
+                  <column datatype='string' name='last_edited_date' ordinal='29' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Stormwater_manhole_cleaned' name='federated.0s0hqu3057t1n512ac7h10yf7heb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s0hqu3057t1n512ac7h10yf7heb'>
+            <column caption='Cartegraph Type' datatype='string' name='[cartegraph_type]' role='dimension' type='nominal' />
+            <column-instance column='[objectid]' derivation='Count' name='[cnt:objectid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cartegraph_type]' derivation='None' name='[none:cartegraph_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_built]' derivation='None' name='[none:year_built:qk]' pivot='key' type='quantitative' />
+            <column caption='Objectid' datatype='integer' name='[objectid]' role='measure' type='quantitative' />
+            <column caption='Year Built' datatype='real' name='[year_built]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s0hqu3057t1n512ac7h10yf7heb].[none:cartegraph_type:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:cartegraph_type:nk]' member='&quot;AIR RELEASE MANHOLE&quot;' />
+              <groupfilter function='member' level='[none:cartegraph_type:nk]' member='&quot;FORCE MAIN ENTRY&quot;' />
+              <groupfilter function='member' level='[none:cartegraph_type:nk]' member='&quot;JUNCTION BOX&quot;' />
+              <groupfilter function='member' level='[none:cartegraph_type:nk]' member='&quot;WATER QUALITY STRUCTURE&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0s0hqu3057t1n512ac7h10yf7heb].[none:year_built:qk]' included-values='in-range'>
+            <max>3019.0</max>
+          </filter>
+          <slices>
+            <column>[federated.0s0hqu3057t1n512ac7h10yf7heb].[none:year_built:qk]</column>
+            <column>[federated.0s0hqu3057t1n512ac7h10yf7heb].[none:cartegraph_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0s0hqu3057t1n512ac7h10yf7heb].[none:cartegraph_type:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0s0hqu3057t1n512ac7h10yf7heb].[cnt:objectid:qk]</rows>
+        <cols>[federated.0s0hqu3057t1n512ac7h10yf7heb].[none:year_built:qk]</cols>
+      </table>
+      <simple-id uuid='{81A432B8-9AD7-4791-A095-1D1ECC710A84}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0s0hqu3057t1n512ac7h10yf7heb].[none:cartegraph_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0s0hqu3057t1n512ac7h10yf7heb].[none:cartegraph_type:nk]</field>
+            <field>[federated.0s0hqu3057t1n512ac7h10yf7heb].[none:year_built:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C1ADB04A-E3D2-4BB1-B8D6-A05B8ABAE672}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nO2dWY8k2XXf/zcicq9933qZ3obdM+SQFklBomRBMGw9GgYkQLBf/GZ/DH4Y
+      A4Zgi5Jp0BZtLSOSJoczw56le3qvrqqufcvKPZa7+SEysjIjIzIjoiq7uirvDxhMZ2XGjRuZ
+      ceKee1YipZRQKIYU7aInoFBcJOcmAJzzc/3cIM79Low7iDGFEBBCnPu4g7r+81Y6znL9b30F
+      GITGNSgtTs31cox5lnGNOB92zBM8frqJpevXYZX2UGMGPvjWHZBEp1YoLp54AlCvgRMCISxQ
+      kcOE5qAhJbJCRF7aLotaMahxBzGmlLL133kyDNcfSwCM/CQ++nABz54+gaFnAXDMEQJd1wGg
+      9f++4xixTnthYw5q3PMeUwgBKWXk7z8Og7h+XddByPnpDWe5/ngCYOh4/fo1bt29D1YvosYM
+      pGOfUqF4d4gnAOkc7r3/vvsit4CJQcxIoXiLKD+AYqhRAqAYapQAKIYaJQCKoUYJgGKoUQKg
+      GGqUACiGGiUAiqFGCYBiqFECoBhqlAAohholAIqhJl6sq5TYePklnOwN2Cdr0HKTeHDv1oCm
+      plAMnlgC0KgcA+k8GOUwDANmowEmJYhKiLnQMVVCzFtKiDEtG7XyCQ5MB/dvzMPZ3gEjBFmV
+      EHOhY6qEmLeUEDM9v4zp2XncYQA1q8jcvYds7FMqFO8O8cVbM5BJA5n05ACmo1C8XZQVSDHU
+      KAFQDDVKABRDjRIAxYVSs6s4rB1c2PmVACguFIuaqNnVCzu/EgDFhcIlBxPsws6vBEBxoTBx
+      dgFggib2gisBUFwojFNwcbbwiI2TddRpLdGxSgAUF4rDHfCzrgBcrQCKS4rD7DOrQJRTSCgB
+      UFxCHO6cXQAEhZCXpEOMQtEOFfTMAuBwJ3GLpNjBcDtrT+BkliBqO6gxA99+cE91iFEkhnEK
+      xumZxnCYDS6TbaRjCYBdL8FkAo6owUAB04aDupTIqYSYCx3zMifEWNSGEByMJV8FLGrBoU6i
+      MWIJQLlUhtmo4dAUmBtJQUBgVnWIufAxL3NCDJMUhJAznUdIDhCZaIxYR8wt38Dc4iJqFiDt
+      suoQozgzlDnQtbMJLhUs8T4iQUJMGiN5APlZjCY6pULhIqUEFSyxCdOD8uQb6cHoDQpFRM4S
+      xuBBuQ0mkm2klQAoLhTKKaR2NgFwmAOWMJxCCYDiQnGYA+jJBUBCggmWOJxCCYDiQqHcgUaS
+      +2OFEBBSJA6oU55gxYVCOQWX0XxIQfDmJlqFQiguHVxySLg+jKQ3MBMMQojEKpASAMWFQbkD
+      gEBCJBYAhzvNfYBSgRSXDIdTALKpxye7gWkzjiipGVQJgOLCsKkFAu1Mm1guOEjz/0lQAqC4
+      MGxmQdO0M6kwbkgRSewJVgKguDAc7oA0g+mTbmJd45FUK4Di8sGEGwkqpUwcz+9GlZLEe4hY
+      jjCrVsLqxjbGJufgVA9hk6zqEKNIjNPcwJ5FhyeEAATgCa1IsQQgkx9FLqPDsizUaxVkRrOu
+      DVeIVkx6P4QQZ0p+eFtjDmrcQYzpfe/nnRAzqOv3sByzdd8kTWgRXACymVk26IQYxhgWl1bw
+      7OVrvH//u9h++QImgJzmalKaFk2jGkTixiDGHNS45z2mlw0W9fuPwyCvn0nmqkBNX0CScwlw
+      EEIgZLLjYwmAoDbW32zj+o33UDrahT45g3xbq5uobW/Osz3OIMcc1LjnPab35L8Mc20fl3F3
+      D0Ckmxyf5FyeH4ALluj4eCpQYQz374+5LyZUOozibLRMl4S0buS42MzuHCsmygqkuDDcUAiA
+      gCT25FrMBKAEQHEJcZjT+nfSG9gbQ/kBFJcOx1sBCEl8A1Ph7QGUACguGbRN7UnqCfbUKCGj
+      meH9KAFQXAhSdoYvnFUFApDIm6wEQHEhuBGgpzd9UiuQw+3TMROoQUoAFBeCkKLjqU8TWIGk
+      lB2Co1YAxaXB3xuM8WQqkDeGX6WKihIAxYUgBO+4YZNGg7ZWAJJsH6EEQHEhuAnxp1abpGZM
+      p82ZlmQfoQRAcSFQTjv6SiQ1g7b7EtQKoLg0uH29TklqBmVtK0ASIQoMhttcfYJHz9dBCMG1
+      Ow/w4d0bAAC7UcHq+iam5pYhzRLqTMed964lmrhiuLGZ3bECJIkF4pJDSAGNuGHQSdSoQAFY
+      vH4HL9a28L3vfYQnLzaBpgCkMgXMTk/gqLgPTRjIwIYpJTLNePQofZqifi4OgxhzUOMOaszL
+      NleLmgBIy3tLGY19LofakDgNB2ecxR4jVAV6/9Z1/Po3n2Hl5nsdfydEB+cUUJ3B3hnOOxPs
+      beCvCZrED+BwB+16VBJLUuAKsLP+AlsHJ2CMoVKpAIvTAACrXsbBURFTM0sgdhk1lkeOEKCZ
+      2BwlI0kIce6ZS4MYc1DjDmqug8gIG9T1E0LAJe9IYOGCxz6XI1wh8hLrhYw/RrAKdO09PHqx
+      hg8/vI/94yIAdxXIj03hwYOp5qemgg5VKCLhN1l6wWxxsrpsanXc8OdmBZKCQ0rAsijeu6Wq
+      PijOHy+Tq524m9j2ukJAbwH4ZvfrwL8HCkA6P4bRkTxuXF/C6otXsSalUETBC2Nuh8t4T3DW
+      nkdMegtQzakG/j1UYbqzMoO//dk/4tbdu7EmpVBEwa8CeZ1e4tAeCt3PD2BRO9BYECoAr7eP
+      cfP6NDZWX8SalEIRhS67v4wfEOf4VpFeK4DD7cBulKECcOvGCo72j7H03p1Yk1IoouBfAQgh
+      XTd0P7oEoEd1OJvZgT6CQAF49c3neLN3jEw2j0ef/gKvto5iTUyh6If/5nVjeeL5AliXJSl8
+      BTBpI/D9QAG488H3AbMEh9pYuHEf12bHYk1MoehHlwCAxFaB/HuGXiqQRc3A9wMFYP3ZV3j4
+      5DUEFygWi8hk0rEmplD0I8gKFHsT7Buj1/E2swM9xYGOsJVbd/Hh9h5sZPGjP/xBrEkpFP0J
+      zt6K7Qfw+RJ6CQDlTvQV4KuHn+HeR7+PH3x0F188/CrWpBSKfjDBIQJMknH3AF0rQIgK5fYg
+      k4GrTuAKMDc1iV9+/A8wIHDnO78fa1IKRT+44IEbUhpjD+BPiAfCHWlMUICc9iNoJ1AArt37
+      Dq7d+07kySgUcaCCNuP4OxWQOCuARHdXmTAVigoGSAmbWV3vBQrA0y9/i99+/RQ3r9/E8nv3
+      cPfGEgDAqlfAtAyKhwdIpQwsLi5GnrBC4UFZsL0/Tk6vkKJL5eGCBwbUOcwGIVp0AfjWRz/E
+      2OQ0tvZLWF6Ybf09kx/F0foqtPwk6qVdfLa1h+9+/7vQhADn0drdc54s+fltj1l3arCpjanC
+      9LmOO4i5ekkm550XcB5zLVZMTI3lOsa0qOU6pXyBnw6L3iXG4Q4c5nQ02OaCg3HWESAHAA27
+      AQICi1pd4wcKACEEL1dXcefuPXz2+Zf4kx+5lqCT7VVsnVi4PU7AUzmAmxCEINXszBG1Q4dh
+      xGpLcCFj1us11Owq5sbnz3Vc4Pzn6rUZGkQ3l7PO9bhqYW6qs5eEhJtn4FeBJJGRz0el0xqn
+      1SIK7nfgH1eAQ9d0CCm6xg892/LcDB49foo7H/xe62/jCzfwnSkK3UhhYqSAhZXryESa7uWj
+      QRuoO42LnsaVJCzkIU5SuxACXHIY5PQW5rKphfhWFs88GnTeUAG4/eB7uPshgRCny6pupJA3
+      UpEneZmp2VXU7MpFT+PSExSfEyYAcTzBQTZ/dxPcrQZ66ZbtdUQ9Av0ATr2Ev/qr/4rfff4p
+      fvGb30We1FWi4dTRUCvAmXh19AKf7/+sa2/iMLtLTwfi5QUHCZEQwftQb3MdtMkOXAG0VAZ3
+      bt9CJjeK2+/fjDypq0TNroUmUSh6wzjFJxv/D0/2HkNComyVMJGbbL0fvgKcTQD81eY8PKtT
+      ZAEw0jnUy8eo1kykC+OYGM1HnthVQEqJulNDw6nHzlMddspmCf/w8uc4qh2635uUOKoddggA
+      C+noGCcWyGZW1yoS1iTDW1mCxg/NB9AhcVIqoWF2601XHQm3bo3DnETlOoaZ//30f+K4ftR2
+      gxMc1vY7PhNm748TC+Qwp9vaI0XgCsBaKlD3qhEqAKNjYyCSw7KH7waQUqDu1EE5hU27nSeK
+      YIQUqNmdaiMhBIf1g44nsz+IzaNlxYkA5QF9haUMiTFyV5yg84ZageYWr0HPjeOkNnx6MBWs
+      +bQgsJiJUah8iCh4Icf+J3OxfgwJ2VJZwvYAQoiOz/WCioAxSHBeMO1hBg1dAQ63X+P//v3H
+      WLh+s+9krhp1u9b6d9UavgdAUup2DQh4Ars+lXrrdbsKJAQHb5o/uWSRVwAnJJwiSI3yVB8q
+      WJeKFCoAJZvgP/+n/4i99dVIE7pKVKwyNM31KFZtJQBRadA6ELC5NTQDe5Wd1uv2zShnFI7d
+      aP09SIcPIsimDxm80fWe/FKKrrzgQAFglOLB3dv45JOHuHv/fqQJXSXqTr21jNedWp9PKzxq
+      djVQeSGE4LB20HrN2tQXIgFdukfxEDt+EMEb6eBEG28T7O9LBoQIwMOHn2Nq6Sb+9E//CBsv
+      h68sSvtGzr+pU4TjqjnB+vtR/bD173b1JSUIstLdisYRgECTKSFdVjspT+sNRRaA2yuz+Mlf
+      /wR/85OfYmblRqQJXSUatN727+H1Bn+x/XmszzeceqjPpNQotm4+u20zmpE6RuDmnIsQR1YQ
+      QSuAm1jf/ffWqiC7TaGBVqDp5Tv4iz8f3npAdftUAIY1HogLHlv967VaNmgDdbuGQmqkozR6
+      GjoKJIUKWLPCc7T6/kEWnaA2SW73yObfSLfgxIp1tWolrG5sI5UdBewSalTH9z764Ep1CvC8
+      wB4mNQOzl646Jm3ACkggCUNKCZOaoe97/oD8RMEtha6732dG6kgjBYABMfp8Bdn0g8ojSoiW
+      GRTozjqLJQDZwjhmJytoCAnKJ7FoWKhJifwVSojhgsOiZivGnnGGmllFPl04n/EvSUJMqVGC
+      Rc3ICSpSStTsas8OLXvlXSwUljo6z+REGhkQ9/sWAo5jg+m50DE8bGYFnsthtGPOTFDQZuKM
+      lBKW05kUE0sAKgeb2Ksy3Lm+gNfFVVhCYpaQViLGVUiIodQNf9A0rdXMweQNjBnj5zI+cDkS
+      YmxuweFO5LlywWAxE7oW/vkT8xgCbmMML5Elr2WQlTo0TQOXBJJ0J6348VQlrzeAJ/iEEIB0
+      fr+CcYhm4oyQAhy84/1Yv0RmbArTrAzb4bhz+yYsocUb4BJgMxtcuBlEgLusDmNYdNWuwmZ2
+      5GBAi1kQUqKXCB7Xj7r6AmSgI0NSrfNEyQvuFTLhV4GElBBtKpdfdYonALkRLC+PtF5n4xx8
+      SWj3AntUhnAj3HDqzfIlAjrpv7JUrEpfQbG5jcPaQcd+Ki9SSGkpSClAEFwglwvekdAeVuUN
+      6DaPuq/deQWNf9Ue4Gemanf/kI0hdIbVnRqYoOCCtVbDXtTsaiRB2a1sdwhATksjTZoCoOmB
+      0bdf73yBTzd+De9GlpCt3mB+/CuAVxPI40xWoGGg3QsMuHplLWBVuMp4G1ouOCinSBv9M7/r
+      Tq3vCkBAsFvZPj2P4MgRVwAgJIhGWnFB7bgPpeAb3g/zeYIpp634pKAK1MNl24tAkC27btcu
+      ZSvSpEjIpk7PI+dDRHlIEEI6PMKcMxS0LNJaCmjuAViAalOxypGTkvwrgM3sjmMdpgSgJ0Eb
+      XpM2EJRsfVURzXwIgIRGXfoxI3rMDe20qAIREjktC4Po0JoWzS47vpSB+7Iw/HsDh7tFsdpf
+      t6MEwEd7GIRH3akHJlpcVRhnoMwGIGGxcOdWO1FjplL6qQBoQiKlGUgRHalmQFx3tTfWEUrd
+      D38wHOW0I7/AvwlWAuAjKPzZ4U6ssn2XHc8TTqBFerK7XuD4puKsNEAIgU50pJoGVL/K5XAK
+      Oyj0OQR/KIU//5hx2qHOKgFog3IamDdKEN5m8yri5UMQQgL7+fphgkX6nJ98MwiOgMCQ7q3o
+      D2ar2uVYY/pXAP94kaJBhxWTNiAC4sl1zUDFjPdDXGbaLWFRbmyH27Eb3AFAtlnVjRCCrHBX
+      AP8NWjJLkcyrHv49hH9e/pVcCUAbdSc4o4kQMlSJMe36vNUjwO30M1YiK1lWnFrhc8TdG/if
+      4NUIDrZ2/ALkX9HVHqAHvW7yYUqNbLRtOqNEhCZNGsrjdEOcaf7bb8WJ64XvFgDqe60EIBQ3
+      pS/4aRNkHbqqtD8Ioqg2NbsaO1xcSoksOW2+mPb2AL4bOK5wde0B+giEEoA2egW9DZM3uNYu
+      ABH2AHUangkWhpQSubZAhFwzLbLdDCqlRNWKt/fq1zpVSN5hKYolAMwx8clnv4OQEs+/+RpP
+      XryONbl3nZpdDf0hG85weIOZYB03fa8kF49EKpCUyLcV1/dWg/ZQBcppbOuSv/dYt/madKhB
+      sWKBND2F8dE8pHQLjgpQCCkhr0hCjD+hoz1xw6IWLGohpZ2tPPy7nhBj0gYs6jrBpJQwnUbf
+      pJi6Xe+ZCOOfKwBIIZAhqdZxaejgnMNhdut8NasKhzmRVxc3gYmDMQovAs6fOCOkgOmYMJqb
+      7pgCYEAjACCwcuMe9tdfwyYEuSuQECOlG//iJVkAbqKJ99pt7MZhGP2zlfrxLifEMIdBQrgd
+      VYSAgADRSM+IUJPWO763fnP1iubmtHTruIKWhZQCvK2Li8UtgKDv2O0JMYQARNNa82WCdRyv
+      Sw1MstY5YqlAZrUEziW2dg/BrCpGFldw9tvh3cCfCxz0vhkxLOAy4w87EFIEOgc93O8tvoFA
+      ExJZ7XQTnNcykIJ3lEYpmyeJ9hayTcf3e5Y1rbNZXqxHUW50Ag8eTMSa0GWBCgrKaUesip+q
+      VcVMYTb0/atA1e6MvHRXRhvZVPCjzuFOrLLmHrokHepkVs8AQrYqPBMQVO0qtJh2GiFFK27L
+      rQjRqXISaB2WLWUFatJvI6cRDTXn6meGNZxGVz6E3WPlM2kjcimTdlJSg952Hp3o0IVbxcEb
+      r2KVw+psheIKgGj9W/rmRgjpsDQpAWhSscoweiR0E0JiheVeVqo+xxMBYPcIiW4kUH8AIC86
+      v2sCt0RK+w1cS+B9dwXIfeoLyfv2KFMC0KRXVTOPYSiT6PeFSCCwwbRH0hCRXJsTDHAD4rLS
+      cDfeom0FiImUpx3kueCBsV3tOQFKAJpECXUYhjKJ/huagPT0BVTtWqR6/n4yAdvPNDHc0iWS
+      gwkWKQ7Jj5RoCRATPFA9a0/yUQLQJEo8+zDEAwV5vHutAGaElTOInOw0qxJCkJE6JNxShjW7
+      mmhvIXFaXpGHlFtvd7YpAWgSJdTBapZJvKpQTruSxsNaC3kkfSh4uQDt5KTRKnpVsSrQEjYn
+      PBWAYOdsu9VKCQD6+wA8vLKJVxWvFpCfsIjQpJlgADoC4TwybSHRbgxQMgHwrsEvzB7t4RFK
+      AOCG4EYJ+pKIJiiXlbDSJr2EPokTTAiOfJAAwOsTwM5UjMxLigmraNH+WysBgBsjHjXvNMkP
+      flkIuzabO6FxRkkeCFII5El3raFsUwVigsVOhGnHK61CWYgAKDNoJzZzArsL+vG8k1eVsHyI
+      sFAIh9uxevt6ECldz68PNytMgnJ2pu/Zc3S5JVGCrkepQB24T7FoT5ur7AwL84XYzAq0ppTN
+      6AWr2tEFYASU0fX2BQ63EpejbK/+5vhKongwcdqNUgkAgKpVjpTRdNVzg8Oeul6VaD/FxlGs
+      hHWPtNBgBHzfGS0FCAGLWmdSNT0rT9gmuD0pJpYACObgi6++hpASb16/xJMXr69EvbR6DFt2
+      7YqWSZRShqZ9Uk4Dzb8njWKiFSANPVBwsiQNIiTKVjmxubm9SwzjLHB+jLPW+LGiQaWUSKUN
+      SOnAoimMwoEpJTJN93WUG0MIEbnrSFTOOmbFLAcmdLQnxHjU7dqZkloGcf2yLfox8RiQqFm1
+      wIQgLzGGpDq75BQbxciJMO1jpoQemMCTIgY0DhxW96FBSzQ24G5+GXNrFQWNQSUFZRREkngC
+      oKcySGkEgAbOHTjg0HGasBA1KeI8O5mcx5gWs0KfZP6/12kNmhatUnEY53393s0U9fsPYq+y
+      gwatd6mCbpIJgSMcjOpjp+eERMVOtgcoIB14XJqkoHGCsl0+07VIuMlB/qpwHkIKgLifiSUA
+      ZrUEy3KwtXuMuekCasxApu0EUb+Ms9w8gxizToPt30HdUVxvKUPa6LZjR+W8r7+jRVDC4x/t
+      ftmV9eVdv040dwUotFdZdiIFEAadK0dSocdlhIaSVQ7NPwgbEzi9fi7dNkxUBKdT8uYegJCY
+      K0BudAIffXSaEDMd5+B3lLjVhwG3TOKUcRWu3qVqV7Fxsh76PiFalze44dTdHmI9QsjDyMjw
+      Y3IyhX1WjyUAflqe4IBeA4Br7/NMoUNvBWLNTLCoGJqBslka4IwGw8+f/SzUyvPN3tc99w9B
+      NUKPG0eJW8fmezx3s1oKY9nOhoSsVAoMaw7j1AoULAASSgBaNKgZ2m8qCNcUerm8wUIKbJXe
+      4Ndrv+i60Sl38OLgaV9Vxh8OUWqcJBaAXEAgnEda6l0pmT/QbwJO9IcU7yMAwGlOwNALgJng
+      Zr5s3eMPqvtgnGKjuIa149WO914evohUe8evAp2YxURzkVIgp4ULQNYXJi0pxd30EmZ5dJWo
+      tQKErOwa0VrXPPQCkORpPsi2qQ53OtoIBbF2vNozRt/Pdnmz1WPrV2sfw2Y2mOCwGMWj3S8j
+      bWT94RClhALAOcMICe8v6l8dpmkaY3oBS3IsspnX2wOElXVs7xY59AJQtSuxM5oG2SugYpXx
+      5fbD0PellPjV64/xN1//NxzWDvqOJ6XETnm7dZNb1MIn67+CzRieHazipBHtRm4XOC6Sx+oQ
+      IZHTwwUgQ4wOv8ZNTIIQgmVtEjLiPsATgLAYJjcxXu0BALhP87imvLpTH5g3+Kh2iM2TjVBP
+      6HHjCHWnjqpdwU8f/zWe7D3qOR4TDIe1/dZrQgieHzzFTnkbj3a+iNQCFegskViza4k75hAh
+      3aZ4IWSQalVykIziPX0OADBnTMCg0Rxj3p6uV4M/tQlukiTR3VUhzteb63FUP4TDbeyUtwPf
+      XztebW0+hRT45euP8Q8vfh4qMO54nU9CQgh++fpjlK3o1qz2fUKc4/xkpd5zxc2TdOvhMkFT
+      mDRc51tGT2OaR2vNLpqd5HtFqtpqE9yMf0mwB7CZ1bNa2lkoNo5BQLB2/KrrPSkl3pxsdKxY
+      GtHw+vgV1oqrXZ8HgK3Sm0BrDeMm0lr0UAMmTuOBivXjRInwADAle29msyTd6ut7Q0x0pEUu
+      yrGwwzrggvd9QKk9QJMkdf+lFJEaR8QfV6LYOAIhBG9O1rviWBq0jqN6t95PCAm05UtI7Fa2
+      A1U8QgKb4YRCOWs9UU8SlCwE3Otb6HMTpzW3aTZnDm4bcx3vrWiTgY20/XgC0EtNVXuAJsnq
+      /hNUrfM3hdacakvVqNqVLmvQRnEt9Mm7X93Dcf2o42+UOTiq9bYoRYWJ04T5knmSaAwpBJa0
+      8Z6fSREdupAYdXRMG52fnU1NIOX0X7WYYKCcBuYwnH5GCQBowrqWGtEGUiSrWD9u/VvXDKwe
+      v+x4f6O4Hvrk1YiGR7tfdjz1gvT/pHDBW6EFSX0AOmWYNXrXlk0RHYYkuC4nulS3FDEwI/r7
+      A5hgbjZY28Oi0Sh3fDe0eS1DLQCJTXmEJCrb14+j+mHHj7ZRXGvp3Q5zsFvd6Xn86+NXHebK
+      rdJmYm9tEJQ7sJiVuDLGJM/2tAABbo1QjUvcIjNd7xFCsBjBH8CbK0D7wyJju30sPM7sCX76
+      6MtL3yGmXz3QXgxiBTiuH3X8aGWr1LLT71a2+268ueB4dvCk9XonRP9Phts/4bh+GNl06mdR
+      jvb9jEY0jNkEi+ngYMMVbbJvXBATHMyXDjmtjUCnp8d51eESd2qQEHAsC9ytRXcpO8RUrUrP
+      zipBCTEedbuWKLElbK4SEsf1o67zvTp8gfHMBF4fvQJkdyd0P092H+PB3LchpMBBZa+nHtyP
+      9uuXEqhZNdcfEGEefoTgWCDjkZJ3Pkq/F3qOOWMCmk0hst3Pbm9MAQmb2m7Is3SFIKOlMckE
+      jprXYzc70SQUAI65hRs42HwD5xJ3iGnQRs/Ei/YOMX7qTj3xdQQdxzhDxSpB8z1d35TW8cMb
+      f4CtymboXNrj4atOBbvVbeiaDknkmVSg9usn0o2vrzrlVpJMHDTKMJ+aaB3b6/hb+eXwcaBh
+      gY5iX+tspgec5gNIKcHBoZHTxCVCCJYxjqLmFtwVkkPX9aQqkA6DMMzceO9Sd4hJWtXMO/Y8
+      yySemMcQAU/rYuMYr49fRc5Z0IiGx7tfu/E/CW31QRBCYHM7cR7wGE8hr0VzZPVjCf33AUH7
+      lBV9qmVG9apIJ348TMzMY276cneLOYsezyWDRZP4AoJ/uIPaQWCiOAHBP6/+Y6wn+Vb5DZ4f
+      PDv3zDPTaSSu2LYgR85tPsvaJGQPtVdCwgpo6jFnTCDVDKfgkqPh1IfXCuRWQUi+AogeVRTC
+      zvf6+BX+7tnPAp9e/g2wByEElAUXeArDLWl+/hGrFbuSqC6SlBILiObFjcJ8ahLv2+MdVh3/
+      +dxOl52kiIGZZli1lAJ/9cV/GV4B4JLHCikOImoYBRccv177Bf7++d9hs7SOg7bgNI9i4yjg
+      SBf/vqAfhJBzNX96HNePYiUPeXDHxso5ppBqRMOfZB7gD6xFgHYbIiSka+b0PTMIIa2watL8
+      foZWABinCVWYU6J4gytWGf/j0X/HN3uPmjemjq+2H3asAkwwlM343VDeNsf1w0SFsMZ4Cjn9
+      fHeLhBB8mL6Of8PvQGP+RngEFjUD90Ar2lSHGfX8zTEDhAuO1aOXWD1+iYncJOZG5jE/uoAU
+      ScOIeSk2s8Elh0GSfQUE4amRUkrUnBqe7D3C0/3HXU6ZjZM11OwqRrOuWtBw6gLOeJIAAAoJ
+      SURBVDBpI7F9fSAwhoJD0MidVsbQNaPjOrhtQeoajD4VMublSOJa/70ghOBGag5/aJr4hbYN
+      XT/9LcO62synJ2HYDDLvfvbSCMB68TU+e/NbFJvJ2FulN60ugDmjgOmRGcyOzLWEIp8u9Bzv
+      rJ5c1xvcvYneLm/h8e5XeHOyHlhWBXAF5Mn+Y/z+jT8E0NT/zzSb88VwOP4Vv4M8SeNv6RPI
+      tHubZIzTgrZSCDwwJ/Ao3zs0WkqBBfR3gJ2FMS3XsaISEr4H0oiGBTmCXbiq0zstAFJK7FV2
+      8Ns3v8Z+da9Lt9WIBhANFjOxW9nGTnkLgLtSFDIFzBTmmkKxgOnCNArpU0tE1SonWs7b8TaE
+      NrPw6vAFHu1+hbJVAkFvWzchBM/2v8G/WPk+UnraDYEYgM6ehLwl8WfkAWbS4xBC4LvOHB6m
+      jruuZcYy8O3MDTxCHwFgHIv65CCnHIhJzdAVdRnj2JFH8esCvS28sOBP3/wGmydvIm/qvB/J
+      0A3YzMZ2eRNbpTdu42VCkE/lW0JRbHT/qHEpmSX8cvWf8OroRUvNibr5tJmNV0cvcX/+gw4L
+      kNfpPM7GVwoBxHROSSEgHacjJnqaZ/FnxocY1fOtv3038x5em0WU2lQhQhn+WHsATfa/1gyV
+      mEwPdgXw4+b82tC14H3HsjaFT/keiJF69wSgalXw2ZtP8OroRSKPox9CSGszZFITm6UNbJbc
+      lMOzWkpM2mjF3sSdJyEEj3e/dAWgzQIkBMfdag7reRMi3f/n0RyG2408no/UoPWotuBHOg7+
+      XHwHubY6/ZlUuuupaRAdf6zdwU/5UxAjBSklPnSmMZudQDlCbnROGAOxSPWjl7VqOjWGDAUc
+      Xb47AtBw6ni49Rme7n8TqjufJ+fxo5x1jsW66+X1m1Nvpxbwe3IUf28+RTErQvcR4xbBv9a+
+      DTNt4jlexJs7CHJ6Bnmjv3VmMTWFB9YUnuoVjFrADzN3Yp3r7SMheniKdaJjXhSwRetJBUBi
+      Y/UFakzHg/fvnGkDZzMbX+98gUe7X7kRfOfw1L8sEKLhV6//OXA1mjBG8G/F9/Drxgs8y5QA
+      re07ERJ3nXH8Ueoe0loK23zwjft+mL6Njfpn+GP93pn3ToNGAn0jRpfkGKZpIakAOLB5BuPE
+      gQkg3/fz4Xyy/is8b1Ymi3zj2w6QSV6c9l2BEOK640NWo5Rm4F9m7uOOcwRTnoZCZ0kay+mZ
+      t/qgyGhp/Lv076HQo6TJuwIBwUhmpOdn7meuQSNaUgHQwagNs1ke/SxwweP/kDHrxr/L9LP9
+      E0KwnJl9S7PpzWW4+QE0K1r3vrW9xJyEAmBgcW4cNaaju9WZQnF5SLwJnpxdwCROkyaidvMQ
+      zeQZj/HsBGYLcz2OCCDFgDYLiZTxKhxEZRDj9htTCIF0ZgrciK5YGplJzBuL0OI03khzAKPg
+      PSxHUkrIHpPVsgQL2hL0HnkRIzoBT51eyyAMHKnMJOaNhZ7XP6mnOubhQeRbbnjFOT/3DimD
+      GHNQ4w5iTO/hc5auKkEM6vrP2mHHz1mu/62bQc/7RxrUmIMadxBjDmozPAzX/9ZXAIXiXUL/
+      8Y9//ONBDW43Kvj0i8e4tjSHx48eYfeoDNhVrG/tIp3L4unjRzCZxOR4vGSJtadfoMxzaBR3
+      sba2DiM/hs3VF6jZHGbpEKtrGxiZnEXaiP60qZWO8NWzVcxNFPDNk6coVi13rps7GBtJ4/OH
+      TwAjhbGR6Lq55AxPvvoUZGQBh5svsL6xCSOTwfraGjZ3DmBVj7GxfYDpmVnoWvSn2PH+Nl5t
+      7mHEEHj6ahUNm6N0uItnT58jk9Xx7PkaUtkcCrnoJgrumPj084eYW1jEq2dPsLlzgDRx8PL1
+      OmyuYf/NK+weVzE3Ox3L77Oz/hI7JyaIXcGr12vgegbrz59i76gEblWxubOLTH4M2Qhebw+r
+      VsZnXz3FyuIMHn/5FepM4nB7A292DlDIAE+fvwLXMhgr9HfyDdRHnc6OYGI0D3ALVGbAyyU0
+      IAHBYFsURNNgW3bsugXLS4ugjKFab2B+YRKvvvkGhycN1Gt1VC2OD+/fxMHucf+B2siPTWEk
+      a8A2a0jnxlErHmNt4w0kp6iUa0hlUrDt/o0kOtB0LM9Pw+YCddPB9HgGpbrE9flJzC0ugMks
+      rk+PomLFG3dydhEpwlEulzE5M4/i4QFu3r6LyelppImAbhDYdrzqzZqRwez0OASnsBlByjZR
+      rJtgnMNxytBSM5jQgbgZFHNLy5DcQaVaw+zcDPa3d2A7NmzbhoCE5BSUxUuySedHMT6aBbgJ
+      phdQ3NuGxYA0tbC6eYT7H30bjVK04l0DFQApBShzQGUWS3MjoLqBiZEJXF+ZxeHRCa5dvwWn
+      XkXMbrCgjIFSipXlZVROypian8f45CR0YYNSG8eHR0gX4rnnhOBwqIN0YRJjOQ0klUKhMILF
+      hRkUKzZu37qJailuSUAJxiioQ7GyvIRypYGxsQK2D0tYnJ2EY9dxUqsjrcfbinHO4FAHMwtL
+      gF1HKptH5XALo7PLMNIjuPXeNZwchWeYBc9UglEKh2tYXpiCKQHasHD95k2YNQu2VUbFttG7
+      rFX3qJy6v9XC0jKsWhW5fApaZhIFQyJVaN4LB/GqTUspQKkDhjwWJtNI5cexvDCDhpCYyOs4
+      PjwGi+ihGugeoFEtYffgGCPjUyC0juzYDHKGwM5+ESsrSzja30FmZMpdJSIjsLm2DgoNczNT
+      KNVMLC/Mo3JyCK7nMJbTsX9cxfJiPNNquXiIo5MKJqdnYVZLmJpfQppw7OwfY3l5HjubW5ic
+      W0IhG/0W4MzG5pstIJXD1EgGJtcwPzOBRsNEPp+HVa+gbHLMz8QLFz7a30a5ZmF2fh4nx0Us
+      rayA2hby+Tw4c7C9vYuF5WuxVEDHrGFzZx/ZwhiyGgPJjGKikMHW9g7ml1bg1EugJIup8d55
+      Fp1I7Gy+gekwzM8voFgqY2V5CaWjPXA9h4l8CjsHJ1hZWYqlAtYrJ9g7LGJ0YhrSaWBqbgHV
+      4gFkegRTozns7u5ibnEZRoQx1SZYMdS8G1kYCsUFoQRAMdQoAVC8k1C7gYZF0ahWwES4lm43
+      aljfeAO7zZJUK5dhW3VYTn/rktoDKN5JWKOIn338EGlQ/OgPvo+X63v41p1r+ObJc9z74AMU
+      93aRKkwiK45QLJtYO2T48M4SiJTYXl3F2ITEVimD1bUN/Ie//HOMZIMtbe9MRphC0Y6Rn8I0
+      TpC7+yP8n//1M+RHRsA5Q7W6j3/+pxL29g7wl//+L9A42MH6xhZG5m7jdw+/gMYdpIWG/MQE
+      RscmsLRCQm9+QAmA4h1mdnEZ+elxyBvX0NAKMGgVWn4C4zrByL33MV7IwjbSyOYK0Akg7TpM
+      pDE1MYpMtgBijGNn4xVqFgsVAqUCKYYatQlWDDX/H/SMLVf+Oy54AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

@@ -15,45 +15,60 @@ This is the dataset that i chose from the VA beach page:
 
 
 
-# Names:
+# Names & Description:
 
-Building Permits Applications
+Building Permits Applications:
+This dataset contains information about building permits issued in Virginia Beach. It includes details such as permit type, issue date, status, address, and construction type.
 
-Zoning District
+Zoning District:
+This dataset describes the zoning regulations for different areas within Virginia Beach. It provides information on zoning designations, permitted land uses, and other zoning-related attributes.
+Stormwater Manhole:
+This dataset contains details about stormwater manholes in Virginia Beach, including their location, size, material, and inspection information.
 
-Stormwater Manhole
+
+# Data Cleaning & Manipulation
+Removing null/missing values:
+* Missing values in all three datasets were addressed using forward fill (ffill) followed by backward fill (bfill) methods. This approach ensures all missing values are filled using the nearest available values in the dataset, minimizing data loss.
+
+Filtering specific columns or rows:
+*   No specific filtering of columns or rows was performed based on the provided code. However, during data cleaning, a threshold was applied to the "Stormwater Manhole" dataset to remove columns with a significant number of missing values (more than 75% missing values). This is done to improve data quality and focus on relevant attributes.
+
+Merging datasets:
+* The code doesn't include merging of datasets. If any merging was conducted, please remember to detail the process and the keys used for merging.
+
+Transformations
+* All datasets were standardized to lower case and spaces replaced by _ in column names to facilitate analysis and  data manipulation.
+
+*  The date columns in the "Stormwater Manhole" dataset were converted to datetime format using  pd.to_datetime to perform date based analysis and visualization.
+
+*  To eliminate possible duplication of rows in all the sets of data drop_duplicates was used to maintain data  accuracy.
 
 
-## Data Prerocessing
-To prepare the data for visualization, the following steps were performed:
 
-Data Cleaning: Removed missing values and inconsistencies.
 
-Filtering: Selected relevant subsets of the data to enhance readability.
-
-Aggregation: Grouped data by meaningful categories to highlight trends.
-
-Normalization: Standardized numerical values where necessary to ensure comparability.
 
 
 
 # Visualization Idioms & Visual Encoding Choices
 ## Bar Chart (First Dataset)
 
-Idiom: Bar Chart / Mark: Rectangle
+Idiom: Bar Chart / Mark: Bar
 | Data: Attribute | Data: Attribute Type  | Encode: Channel | 
 | --- |---| --- |
-| Category | Categorical | Vertical spatial region (y-axis) |
-| Value | Quantitative | Horizontal position on a common scale (x-axis) |
+| permittype | Categorical | Horizontal Position (x-axis) and Bar Length (y-axis) |
+| Count (derived from frequency) | Quantitative | Bar Length (y-axis) |
+
+Justification:  A bar chart is a good way to present and rank the frequency of categorical data like permit  types. The horizontal bars are also clearly showing the top 10 permit types and the length of the bar  is the count or frequency of each type, making it easy to see how common each type is compared  to the others.
 
 ## Scatterplot (Second Dataset)
 
 Idiom: Scatterplot / Mark: Point
 | Data: Attribute | Data: Attribute Type  | Encode: Channel | 
 | --- |---| --- |
-| X Variable | Quantitative | Horizontal spatial region (x-axis) |
-| Y Variable | Quantitative | Horizontal position on a common Vertical spatial region (y-axis) |
-| Category    | Categorical  | Color
+| shapestarea | Quantitative | Horizontal Position (x-axis) |
+| shapestlength | Quantitative | Vertical Position (y-axis) |
+
+Justification:  A scatter plot is suitable for displaying the relationship between two quantitative variables. In this case, it  is the shapestarea vs shapestlength in the Zoning District dataset. Any correlations or patterns  between the two attributes can be revealed by the distribution of points on the plot, and it can help  give some insight into the zoning data.
 
 
 ## Area Chart (Third Dataset)
@@ -61,50 +76,49 @@ Idiom: Scatterplot / Mark: Point
 Idiom: Area Chart  / Mark: Area
 | Data: Attribute | Data: Attribute Type  | Encode: Channel | 
 | --- |---| --- |
-| X Variable | Quantitative | Horizontal spatial region (x-axis) |
-| Y Variable | Quantitative | Horizontal position on a common Vertical spatial region (y-axis) |
-| Category    | Categorical  | Color
+| year_built | Temporal (year) | Horizontal Position (x-axis) |
+| Count (derived from frequency)  | Quantitative | Vertical Position (y-axis) and Area under the line |
+
+Justification:  This diagram can be used to visualize the distribution of the construction timeline of Stormwater manholes.  The line shows the frequency for each year and the filled area represents the cumulative count. This helps us  see patterns and trends in the Stormwater Manhole construction over time very effectively.
 
 
-
-## Multiple Line Chart (Fourth Dataset)
+##  Area Chart (Fourth Dataset)
 
 Idiom: Area Chart  / Mark: Area
 | Data: Attribute | Data: Attribute Type  | Encode: Channel | 
 | --- |---| --- |
-| X Variable | Quantitative | Horizontal spatial region (x-axis) |
-| Y Variable | Quantitative | Horizontal position on a common Vertical spatial region (y-axis) |
-| Category    | Categorical  | Line Color
+| year_built | Temporal (year) | Horizontal Position (x-axis) |
+|Count (derived from frequency) | Quantitative | Vertical Position (y-axis) and Area under the line |
+| Cartergraph Type    | Categorical  | Color Encoding for Different Types
+
+Justification:  The Tableau recreation of the Stormwater Manhole Construction Timeline has been enhanced by the incorporation of  color encoding for different Cartergraph Type values. This improvement helps to distinguish more categories of stormwater  manholes and give more information about their construction trends.
 
 
 # Creating Charts
 
 ### First Chart: 
-  **![First Chart for the First Dataset](First_Bar_Dataset.png)**
-
-  ### Second Chart: 
-  **![First Chart for the First Dataset](Second_scatterplot_Dataset.png)**
-
+  **![First Chart for the First Dataset](first_data_chart.png)**
+  ![alt text](image-17.png)
+  [First Chart for the First Dataset Link](https://colab.research.google.com/drive/1g_qNxmuTju9rOxqxLGQ8cyj2X27UxlfO?authuser=2#scrollTo=h8zIxy2dLk-2)
+   ### Second Chart: 
+  **![Second Chart for the First Dataset](second_data_chart.png)**
+  ![alt text](image-19.png)
+  [Second Chart for the Second Dataset Link](https://colab.research.google.com/drive/1g_qNxmuTju9rOxqxLGQ8cyj2X27UxlfO?authuser=2#scrollTo=h8zIxy2dLk-2)
 ### Third Chart: 
-  **![First Chart for the First Dataset](Thrid_Area_Dataset.png)**
-
+  **![Third Chart for the First Dataset](third_data_chart.png)**
+![alt text](image-20.png)
+[Third Chart for the Third Dataset Link](https://colab.research.google.com/drive/1g_qNxmuTju9rOxqxLGQ8cyj2X27UxlfO?authuser=2#scrollTo=h8zIxy2dLk-2)
 ### Fourth Chart (Using Tableau): 
-  **![First Chart for the First Dataset](Fourth_chart.png)**
+  **![Fourth Chart for the First Dataset](fourth_data_chart.png)**
+![alt text](image-21.png)
+  Look at the "[text](HW3_Fourth_recreate_chart.twb)" file
 
-# Customizations
-
-Adjusted axis scales for better readability.
-
-Used distinct colors to differentiate categories.
-
-Added gridlines and labels for clarity.
-
-Modified line thickness for better distinction.
 
 
 # Reflection
 
-For the chart recreated in another tool, the ease of use and customization capabilities were assessed. 
+ Tableau was used for the recreation of the visualization.  Tableau provided an intuitive drag  ’n’ drop interface, that made it easier to arrange the data and tweak the visualizations.   Tableau provided better control over the visualization with the help of built in color encoding and interactive filtering.   Compared to other tools, Tableau simplified the process of combining multiple dimensions and attributes into one  visualization.  The only disadvantage of Tableau is that although it has powerful visual capabilities, exporting and embedding  charts can be more complicated than code-based tools like Seaborn or Vega-Lite.
+
 
 # References
 
@@ -115,16 +129,6 @@ List any external resources consulted for data processing, visualization techniq
 [Reference 2]
 
 [Reference 3]
-
-
-
-
-
-
-
-
-
-
 
 ## Links to Code / Workbooks
 
