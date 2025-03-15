@@ -26,7 +26,7 @@ Visualiztion Choice:
   * Public water supply withdrawals have been increasing with the population and development of  infrastructure. There is a noticeable upward trend from 1950 to 2005.
 
   Design Decisions & Customizations:
-   * To reinforce the idea of water, blue was chosen while data points are used to represent clearly the values  for each year. Gridlines were included to help structure the information.
+   *  To emphasize the concept of water, the color blue was used and data points were used to illustrate  the values for each year in a straightforward manner. The gridlines were included to help organize the  information.
 
 
 # Q2: Which of the end uses has contributed the most to the growth over time?
@@ -50,4 +50,4 @@ Insights Gained:
 
 
  Design Decisions & Customizations:
- * Distinct colors were used for each category to enhance visual differentiation, while bars were sorted in descending order to highlight the largest changes. Axis labels were adjusted for improved readability.
+ *  Different colors were used for each category to increase the visual distinction and the bars were sorted in  descending order to show the most significant changes. The axis labels were also modified to enhance the  readability.
