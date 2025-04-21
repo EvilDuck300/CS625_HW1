@@ -97,10 +97,9 @@ Third Chart:
 
 * When these outliers were investigated, it was observed that some states like New Jersey and Rhode Island have always been densely populated while many of the Midwestern states have remained relatively sparse.
 
-
 # Refrences:
  [eCDF](https://www.mathworks.com/help/stats/ecdf.html)
- 
+
  [eCDF statistics](https://library.virginia.edu/data/articles/understanding-empirical-cumulative-distribution-functions)
  
 
