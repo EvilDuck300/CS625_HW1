@@ -11,6 +11,13 @@
 
 Dataset link: [NYC Open Data – Summer Sports Experience (2017–2021)](https://data.cityofnewyork.us/Recreation/Summer-Sports-Experience/4p8d-4p2z)
 
+Github Project link:
+[Github Link](https://github.com/EvilDuck300/CS625_HW1/tree/d0b280d2cdd0c1b86acd62394d0406ce40575ece/Semester%20Project%20-%20Aamr%20Ibrahim)
+
+Google Colab Link: 
+[Google Colab Link](https://colab.research.google.com/drive/1zWXzO3s0jVFLVDSdRx4p6S061SugWRuV?usp=sharing)
+
+
 Topic:
 The selected topic is  Weekly Sports Attendance Patterns, which is aimed at determining the patterns in  sports participation during various days of the week. The dataset “Summer Sports Experience  (2017-2021)” that contains the records of borough locations, park names, types of sports played, and daily  attendance figures can be used to analyze the attendance during different days of the week. From the data,  it can be confirmed that some days are more active than others in attendance, if weekends are better than  weekdays, and which types of sports are more popular on specific days. Furthermore, we can find out  how the attendance patterns have changed over the years from 2017 to 2021 and evaluate the  possible effects of external factors such as the COVID-19 pandemic. This analysis will offer insights into sports  participation behavior, which can help in identifying trends that may be useful for sports organizers, community planners,  and policymakers.
 
